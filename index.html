@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f7f5ef">
+  <title>中国・四国 TRIP BOARD</title>
+  <meta name="description" content="鳥取・神戸・淡路島・香川を巡る3日間の旅程と地図">
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">CS</span>
+      <div><strong>中国・四国</strong><small>TRIP BOARD</small></div>
+    </div>
+    <div class="trip-meta"><span>3-DAY JOURNEY</span><span>WEST JAPAN</span></div>
+    <button class="icon-button" id="locateButton" aria-label="現在地を地図に表示" title="現在地"><span aria-hidden="true">⌖</span></button>
+  </header>
+
+  <main>
+    <section class="day-strip" aria-label="日付選択">
+      <button class="day-tab active" data-day="1"><span>DAY</span><strong>01</strong><small>鳥取 → 神戸</small></button>
+      <button class="day-tab" data-day="2"><span>DAY</span><strong>02</strong><small>淡路島 → 高松</small></button>
+      <button class="day-tab" data-day="3"><span>DAY</span><strong>03</strong><small>うどん → 神戸</small></button>
+    </section>
+
+    <section class="map-section">
+      <div class="map-heading">
+        <div><p class="eyebrow">ROUTE OVERVIEW</p><h1 id="dayTitle">鳥取から、旅が始まる。</h1></div>
+        <div class="map-filters" aria-label="表示するスポット">
+          <button class="filter active" data-category="all">すべて</button>
+          <button class="filter" data-category="stay">ホテル</button>
+          <button class="filter" data-category="food">うどん</button>
+          <button class="filter" data-category="sight">観光</button>
+        </div>
+      </div>
+      <div id="map" aria-label="旅行ルート地図"></div>
+      <div class="map-legend"><span><i class="dot route"></i>選択日のルート</span><span><i class="dot spot"></i>立ち寄り先</span></div>
+    </section>
+
+    <section class="dashboard">
+      <article class="schedule-panel">
+        <div class="section-title"><div><p class="eyebrow">ITINERARY</p><h2 id="scheduleTitle">DAY 1</h2></div><span class="status-pill" id="dayStatus">公共交通</span></div>
+        <div id="timeline" class="timeline"></div>
+      </article>
+
+    </section>
+  </main>
+
+  <div class="place-sheet" id="placeSheet" aria-hidden="true">
+    <button class="sheet-close" id="sheetClose" aria-label="詳細を閉じる">×</button>
+    <p class="eyebrow" id="sheetType"></p><h2 id="sheetName"></h2><p id="sheetNote"></p>
+    <div class="sheet-actions"><a id="navigateLink" class="primary-action" target="_blank" rel="noopener">ここへ行く ↗</a><a id="referenceLink" class="secondary-action" target="_blank" rel="noopener">公式・参考</a></div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
