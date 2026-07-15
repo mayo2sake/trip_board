@@ -14,9 +14,9 @@ const places = [
 ];
 
 const days={
-  1:{title:'鳥取から、旅が始まる。',date:'DAY 1',status:'公共交通',center:[35.12,134.70],zoom:8,route:['airport','dunes','tottori','sannomiya','rei'],schedule:[['朝','鳥取空港に到着','タクシーで砂丘へ','airport'],['午前','鳥取砂丘','観光・昼食','dunes'],['午後','スーパーはくと','鳥取から三ノ宮へ','tottori'],['夕方','三ノ宮に到着','ホテル候補を確認して神戸で夕食','rei']]},
-  2:{title:'海を越えて、四国へ。',date:'DAY 2',status:'レンタカー',center:[34.48,134.68],zoom:8,route:['sannomiya','awaji','naruto','bokaiso'],schedule:[['午前','三ノ宮から出発','レンタカーで淡路島へ','sannomiya'],['昼頃','淡路島を観光','立ち寄り先は当日の状況で調整','awaji'],['午後','鳴門海峡を通過','四国・香川方面へ','naruto'],['夕方','ホテル望海荘','屋島の宿へ移動','bokaiso']]},
-  3:{title:'うどんを巡って、神戸へ。',date:'DAY 3',status:'レンタカー',center:[34.38,134.48],zoom:8,route:['bokaiso','yamada','moriya','gamou','sannomiya'],schedule:[['朝','うどん巡りスタート','営業状況を見て候補店から選択','yamada'],['午前','うどん店を巡る','混雑や売り切れに合わせて順番を調整','moriya'],['午後','高松を出発','三ノ宮へ戻る','gamou'],['夕方','三ノ宮に到着','レンタカーを返却して帰路へ','sannomiya']]}
+  1:{title:'鳥取から、旅が始まる',date:'DAY 1',status:'公共交通',center:[35.12,134.70],zoom:8,route:['airport','dunes','tottori','sannomiya','rei'],schedule:[['朝','鳥取空港に到着','タクシーで砂丘へ','airport'],['午前','鳥取砂丘','観光・昼食','dunes'],['午後','スーパーはくと','鳥取から三ノ宮へ','tottori'],['夕方','三ノ宮に到着','ホテル候補を確認して神戸で夕食','rei']]},
+  2:{title:'海を越えて、四国へ',date:'DAY 2',status:'レンタカー',center:[34.48,134.68],zoom:8,route:['sannomiya','awaji','naruto','bokaiso'],schedule:[['午前','三ノ宮から出発','レンタカーで淡路島へ','sannomiya'],['昼頃','淡路島を観光','立ち寄り先は当日の状況で調整','awaji'],['午後','鳴門海峡を通過','四国・香川方面へ','naruto'],['夕方','ホテル望海荘','屋島の宿へ移動','bokaiso']]},
+  3:{title:'うどんを巡って、神戸へ',date:'DAY 3',status:'レンタカー',center:[34.38,134.48],zoom:8,route:['bokaiso','yamada','moriya','gamou','sannomiya'],schedule:[['朝','うどん巡りスタート','営業状況を見て候補店から選択','yamada'],['午前','うどん店を巡る','混雑や売り切れに合わせて順番を調整','moriya'],['午後','高松を出発','三ノ宮へ戻る','gamou'],['夕方','三ノ宮に到着','レンタカーを返却して帰路へ','sannomiya']]}
 };
 
 const typeLabel={stay:'ホテル',food:'うどん',sight:'観光',transit:'交通'};
